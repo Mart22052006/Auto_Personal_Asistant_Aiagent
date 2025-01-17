@@ -1,0 +1,44 @@
+.header {
+  height: 56px;
+  box-sizing: border-box;
+  border: 1.5px solid rgba(255, 223, 186, 0.3); /* 柔和的金色边框 */
+  background: #ffdfba; /* 金色背景，体现繁荣 */
+  background: linear-gradient(to right, hwb(32 73% 0%), rgb(255, 245, 230)); /* 柔和渐变 */
+  .svg-style {
+    color: rgb(102, 85, 60); /* 深金色，用于图标 */
+  }
+  .logo {
+    /* Logo */
+    position: absolute;
+    width: 126px;
+    height: 32px;
+    left: 32px;
+    right: 1122px;
+    top: 10px;
+    bottom: 14px;
+  }
+}
+
+.side {
+  width: 168px;
+  background: rgb(245, 245, 240); /* 柔和的浅米色，体现未来感 */
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1); /* 柔和阴影 */
+  .active {
+    color: rgb(0, 0, 0)!important;
+    background: rgba(255, 223, 186, 0.7) !important;
+  }
+  a {
+    color: rgb(102, 85, 60); /* 深金色文字 */
+    &:hover {
+      color: rgb(255, 215, 145); /* 悬停时更亮的金色 */
+    }
+  }
+}
+.main {
+  background: rgb(250, 250, 245); /* 浅米色背景，舒适阅读 */
+  box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.05); /* 非常轻的阴影 */
+  color: rgb(51, 51, 51); /* 深灰色文字，提升对比度 */
+  color: gray-800;
+}
+
+
