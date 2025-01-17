@@ -9,8 +9,9 @@ const NotFound = lazy(() => import('@/pages/Error/404'));
 const Login = lazy(() => import('@/pages/Login'));
 const Registration = lazy(() => import('@/pages/Login/register'));
 const Profile = lazy(() => import('@/pages/Profile'));
-const Email = lazy(() => import('@/pages/Email')); // 引入 Email 页面
-const Report = lazy(() => import('@/pages/Report')); 
+const Email = lazy(() => import('@/pages/Email')); // Email 页面
+const Report = lazy(() => import('@/pages/Report'));
+const Calendar = lazy(() => import('@/pages/Calendar')); // Google Calendar 页面
 
 const router = createBrowserRouter([
   {
@@ -50,17 +51,24 @@ const router = createBrowserRouter([
         },
       },
       {
-        path: '/email', // 新增 Email 路由
+        path: '/email', // Email 页面
         element: <Email />,
         handle: {
-          title: 'Email', // 页面标题
+          title: 'Email',
         },
       },
       {
-        path: '/report', // 新增 Email 路由
+        path: '/report', // Report 页面
         element: <Report />,
         handle: {
-          title: 'Report', // 页面标题
+          title: 'Report',
+        },
+      },
+      {
+        path: '/calendar', // Google Calendar 页面
+        element: <Calendar />,
+        handle: {
+          title: 'Google Calendar',
         },
       },
     ],
