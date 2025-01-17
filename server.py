@@ -7,11 +7,9 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Webhook URL
-WEBHOOK_URL = 'https://mirawang.app.n8n.cloud/webhook-test/9c10a798-1df0-442b-ab5a-0d90e4166814'
+WEBHOOK_URL = 'https://mirawang.app.n8n.cloud/webhook/9c10a798-1df0-442b-ab5a-0d90e4166814'
 
-@app.route('/')
-def serve_index():
-    return send_from_directory('.', 'index.html')
+
 
 @app.route('/proxy-webhook', methods=['POST'])
 def proxy_webhook():
@@ -31,5 +29,9 @@ def proxy_webhook():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/')
+def serve_index():
+    return send_from_directory('.', 'index.html')
+
 if __name__ == '__main__':
-    app.run(port=8081)
+    app.run(port=5000)
