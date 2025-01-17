@@ -101,10 +101,6 @@ python server.py
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Team
-- Team 15
-- Course Project for IT5007
-
 ## Acknowledgments
 - Movie data provided by external APIs
 - n8n for workflow automation
