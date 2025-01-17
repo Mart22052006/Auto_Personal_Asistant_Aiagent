@@ -101,3 +101,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SIMPLEUI_DEFAULT_THEME = 'admin.lte.css'
 SIMPLEUI_HOME_TITLE = '首页'
 SIMPLEUI_HOME_INFO = False
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'hack',
+        'USER': 'postgres',
+        'PASSWORD': '444051',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
